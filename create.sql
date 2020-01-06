@@ -40,7 +40,7 @@ CREATE TABLE clients (
 
 CREATE TABLE speed_test (
 	id SERIAL PRIMARY KEY,
-	time TIMESTAMP,
+	timestamp TIMESTAMP,
 	download_speed FLOAT,
 	upload_speed FLOAT,
 	ping FLOAT,

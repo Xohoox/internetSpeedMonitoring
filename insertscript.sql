@@ -68,7 +68,7 @@ WHERE NOT EXISTS (
 
 
 -- Insert and parse JSON Data to speed_test
-INSERT INTO speed_test(time, download_speed, upload_speed, ping, server_id, latency, bytes_sent, bytes_received, client_id)
+INSERT INTO speed_test(timestamp, download_speed, upload_speed, ping, server_id, latency, bytes_sent, bytes_received, client_id)
 SELECT (jsondata->>'timestamp')::timestamp,
 	   (jsondata->>'download')::float,
 	   (jsondata->>'upload')::float,
